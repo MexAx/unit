@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/novicon.png</file>
+        <file>images/citajicon.png</file>
+        <file>images/saveicon.png</file>
+        <file>images/exit.png</file>
+        <file>images/updateicon.png</file>
+        <file>images/nazadicon.png</file>
+        <file>images/nexticon.png</file>
+        <file>images/previousicon.png</file>
+        <file>images/forwardicon.png</file>
+        <file>images/deletered.png</file>
+        <file>images/refresh.jpeg</file>
+        <file>images/pozadina.jpeg</file>
+        <file>images/filenew.png</file>
+        <file>images/print_file.png</file>
+        <file>images/print_preview.jpeg</file>
+        <file>images/savehtml.jpeg</file>
+        <file>images/savepdf.jpeg</file>
+        <file>images/POZ-2.GIF</file>
+        <file>images/rectangle.png</file>
+        <file>images/apple2.png</file>
+        <file>images/pozadfull.jpg</file>
+    </qresource>
+</RCC>

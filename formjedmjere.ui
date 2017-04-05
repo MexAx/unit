@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Mehmed</author>
+ <class>FormJedmjere</class>
+ <widget class="QMainWindow" name="FormJedmjere">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>526</width>
+    <height>448</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Jedinice mjere</string>
+  </property>
+  <property name="locale">
+   <locale language="Bosnian" country="BosniaAndHerzegowina"/>
+  </property>
+  <widget class="QWidget" name="widget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab_Lista">
+       <attribute name="icon">
+        <iconset resource="../glavniformdb/styles.qrc">
+         <normaloff>:/images/woodbutton.png</normaloff>:/images/woodbutton.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Lista spisak</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="4" rowspan="2">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Preferred</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>138</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Odaberi redoslijed ispisa JM</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox">
+            <item>
+             <property name="text">
+              <string>po Nazivu</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>po Šifri</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>dio Naziva</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="4">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Unesi naziv jedinice mjere</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QLineEdit" name="lineEdit_Opis">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>A</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" rowspan="6" colspan="2">
+         <widget class="QTreeView" name="treeViewJM">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="4">
+         <widget class="QPushButton" name="pushButtonList">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Lista</string>
+          </property>
+          <property name="icon">
+           <iconset resource="MyRes.qrc">
+            <normaloff>:/images/nexticon.png</normaloff>:/images/nexticon.png</iconset>
+          </property>
+          <property name="shortcut">
+           <string>Ctrl+A</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_Form">
+       <attribute name="icon">
+        <iconset resource="MyRes.qrc">
+         <normaloff>:/images/saveicon.png</normaloff>:/images/saveicon.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Pojedinačni pregled</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Naziv jedinice mjere</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>ID jedinice mjere</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_1">
+          <property name="text">
+           <string>Skraćena oznaka</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <widget class="QLineEdit" name="lineEditNaziv">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Unesi naziv &lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="locale">
+           <locale language="Bosnian" country="BosniaAndHerzegowina"/>
+          </property>
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="maxLength">
+           <number>50</number>
+          </property>
+          <property name="dragEnabled">
+           <bool>false</bool>
+          </property>
+          <property name="placeholderText">
+           <string>Unesi naziv</string>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>60</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="1" alignment="Qt::AlignLeft">
+         <widget class="QLineEdit" name="lineEditSkroz">
+          <property name="focusPolicy">
+           <enum>Qt::StrongFocus</enum>
+          </property>
+          <property name="locale">
+           <locale language="Bosnian" country="BosniaAndHerzegowina"/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Minimum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>60</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="id_brojsB">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="locale">
+           <locale language="Bosnian" country="BosniaAndHerzegowina"/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="maximum">
+           <number>999999999</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>526</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionNovi"/>
+    <addaction name="actionIzlaz"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionCitaj"/>
+    <addaction name="actionDodaj"/>
+    <addaction name="actionPromijeni"/>
+    <addaction name="actionBrisi"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuPregled">
+    <property name="title">
+     <string>Pre&amp;gled</string>
+    </property>
+    <addaction name="actionPrvi_slog"/>
+    <addaction name="actionPrethodni_slog"/>
+    <addaction name="separator"/>
+    <addaction name="actionSlijedeci_slog"/>
+    <addaction name="actionZadnji_slog"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuPregled"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="windowTitle">
+    <string>GlavnitoolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>40</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNovi"/>
+   <addaction name="separator"/>
+   <addaction name="actionCitaj"/>
+   <addaction name="actionDodaj"/>
+   <addaction name="actionPromijeni"/>
+   <addaction name="actionBrisi"/>
+   <addaction name="separator"/>
+   <addaction name="actionPrvi_slog"/>
+   <addaction name="separator"/>
+   <addaction name="actionPrethodni_slog"/>
+   <addaction name="actionSlijedeci_slog"/>
+   <addaction name="actionZadnji_slog"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBarexit</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionIzlaz"/>
+  </widget>
+  <action name="actionNovi">
+   <property name="icon">
+    <iconset resource="MyRes.qrc">
+     <normaloff>:/images/novicon.png</normaloff>:/images/novicon.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Novi</string>
+   </property>
+  </action>
+  <action name="actionIzlaz">
+   <property name="icon">
+    <iconset resource="MyRes.qrc">
+     <normaloff>:/images/exit.png</normaloff>:/images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+  </action>
+  <action name="actionDodaj">
+   <property name="icon">
+    <iconset resource="MyRes.qrc">
+     <normaloff>:/images/saveicon.png</normaloff>:/images/saveicon.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Dodaj</string>
+   </property>
+  </action>
+  <action name="actionPromijeni">
+   <property name="icon">
+    <iconset resource="MyRes.qrc">
+     <normaloff>:/images/updateicon.png</normaloff>:/images/updateicon.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Promijeni</string>
+   </property>
+  </action>
+  <action name="actionBrisi">
+   <property name="icon">
+    <iconset resource="MyRes.qrc">
+     <normaloff>:/images/deletered.png</normaloff>:/images/deletered.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Brisi</string>
+   </property>
+  </action>
+  <action name="actionPrvi_slog">
+   <property name="icon">
+    <iconset resource="MyRes.qrc">
+     <normaloff>:/images/nazadicon.png</normaloff>:/images/nazadicon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pr&amp;vi slog</string>
+   </property>
+  </action>
+  <action name="actionPrethodni_slog">
+   <property name="icon">
+    <iconset resource="MyRes.qrc">
+     <normaloff>:/images/previousicon.png</normaloff>:/images/previousicon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pre&amp;thodni slog</string>
+   </property>
+  </action>
+  <action name="actionSlijedeci_slog">
+   <property name="icon">
+    <iconset resource="MyRes.qrc">
+     <normaloff>:/images/nexticon.png</normaloff>:/images/nexticon.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Slijedeći slog</string>
+   </property>
+  </action>
+  <action name="actionZadnji_slog">
+   <property name="icon">
+    <iconset resource="MyRes.qrc">
+     <normaloff>:/images/forwardicon.png</normaloff>:/images/forwardicon.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Zadnji slog</string>
+   </property>
+  </action>
+  <action name="actionCitaj">
+   <property name="icon">
+    <iconset resource="MyRes.qrc">
+     <normaloff>:/images/citajicon.png</normaloff>:/images/citajicon.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Citaj</string>
+   </property>
+   <property name="toolTip">
+    <string>Čitaj podatke</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>id_brojsB</tabstop>
+  <tabstop>lineEditNaziv</tabstop>
+  <tabstop>lineEditSkroz</tabstop>
+  <tabstop>lineEdit_Opis</tabstop>
+  <tabstop>comboBox</tabstop>
+  <tabstop>pushButtonList</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../glavniformdb/styles.qrc"/>
+  <include location="MyRes.qrc"/>
+ </resources>
+ <connections/>
+</ui>
